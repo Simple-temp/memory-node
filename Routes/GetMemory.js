@@ -10,16 +10,5 @@ getMemory.get("/", async (req, res) => {
 
 })
 
-// getMemory.get("/uploads/:file", async (req, res) => {
-
-//     const filename = req.params.filename;
-    
-//     const data = await Memory.findOne({ file : filename})
-
-//     console.log(data)
-
-//     res.json(data)
-
-// })
 
 export default getMemory

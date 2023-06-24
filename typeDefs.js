@@ -12,16 +12,13 @@ const typeDefs = gql`
         file : String! 
     }
 
-    type Mutation {
-        createMemory ( input : InputData! ) : GetMemory!
-    }
-
     scalar Upload
 
-    input InputData{
-        name : String!
-        file : String!
+    type Mutation {
+        createMemory (file: Upload, name: String) : GetMemory
     }
+
+
 
 `
 

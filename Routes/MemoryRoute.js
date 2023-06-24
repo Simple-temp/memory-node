@@ -20,9 +20,6 @@ const MemoryRouter = express.Router()
 
 MemoryRouter.post("/", upload.single("file"), async (req, res) => {
 
-    // const file = req.file;
-    // const name = req.body.name;
-
     console.log(req.file, req.body.name)
     
     try {
